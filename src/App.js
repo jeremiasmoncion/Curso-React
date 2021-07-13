@@ -1,26 +1,13 @@
+import React from 'react';
 import logo from './logo.svg';
+import Componente from './components/Componente';
 import './App.css';
 
-function App() {
-  let nombre = "Jere";
-  let auth = false;
-  let estaciones = ["Primavera", "Verano", "Otoño", "Invierno"]
-
-  return (
-
-    <>
+function App() {  
+  return (   
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <label htmlFor="Nombre">Nombre</label>
-        <input type="text" id="Nombre"></input>
-        <h1>{nombre}</h1>
-        <p> {auth ? "No logueado" : "Logueado"} </p>
-
-        <ul>
-          {estaciones.map((elemento, index) => <li key={index}>{elemento}</li>)}
-        </ul>
-
+        <img src={logo} className="App-logo" alt="logo" />       
         <p>
           Editar <code>src/App.js</code> and save to reload.
         </p>
@@ -33,9 +20,12 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-    </>
 
+      <section>
+        <Componente msg ="Primer Componenente 1"/>
+      </section>
+
+    </div>    
 
   );
 }
