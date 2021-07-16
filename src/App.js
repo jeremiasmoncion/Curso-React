@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Componente from "./components/Componente";
 import Propiedades from "./components/Propiedades";
 import './App.css';
+import Estado from './components/Estado';
 
 function App() {  
   return (   
@@ -38,6 +39,10 @@ function App() {
           function = {num => num * num}
           elementoReact = {<i> Esto es un elemento React</i>}
           componenteReact = {<Componente msg = "mensaje de componente desde propiedad"></Componente>}></Propiedades>
+          <hr></hr>
+
+          <Estado></Estado>
+
         </section>
 
       
