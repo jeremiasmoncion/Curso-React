@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import Componente from "./components/Componente";
 import Propiedades from "./components/Propiedades";
 import './App.css';
-import Estado from './components/Estado';
+import Estado from './components/Estado'; 
+import RenderizadoCondicional from './components/RenderizadoCondicional';
+
 
 function App() {  
   return (   
@@ -42,6 +44,10 @@ function App() {
           <hr></hr>
 
           <Estado></Estado>
+
+          <hr></hr>
+
+          <RenderizadoCondicional></RenderizadoCondicional>
 
         </section>
 
