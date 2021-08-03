@@ -7,6 +7,8 @@ import Estado from './components/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional';
 import RenderizadoElementos from './components/RenderizadoElementos';
 import {EventosES6, EventosES7} from './components/Eventos';
+import MyVerticallyCenteredModal from './components/Modal';
+
 
 
 function App() {  
@@ -60,6 +62,16 @@ function App() {
           <EventosES6></EventosES6>
           <hr></hr>
           <EventosES7></EventosES7>
+
+          <hr></hr>
+
+          {/* <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch vertically centered modal
+          </Button>
+
+          <MyVerticallyCenteredModal
+            show={modalShow}
+            onHide={() => setModalShow(false)}/> */}
 
         </section>
 
